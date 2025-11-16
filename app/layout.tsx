@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ChatWidget } from '@/components/chat-widget'
 
-const roboto = Roboto({ 
-  weight: ['300', '400', '500', '700', '900'],
+const poppins = Poppins({ 
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -52,7 +52,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ro">
-      <body className={roboto.className}>
+      <body className={poppins.className}>
         <Navbar />
         <main className="min-h-screen pt-20">
           {children}

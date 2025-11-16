@@ -33,10 +33,10 @@ export function Navbar() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] rounded-lg rotate-45 group-hover:rotate-[50deg] transition-transform duration-300"></div>
               <div className="absolute inset-[3px] bg-white rounded-lg rotate-45"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-lg font-bold text-[#111111] z-10 font-azonix">N</span>
+                <span className="text-lg font-bold text-[#111111] z-10">N</span>
               </div>
             </div>
-            <span className="text-xl font-bold text-[#111111] tracking-tight font-azonix uppercase">
+            <span className="text-xl font-bold text-[#111111] tracking-tight">
               Negulescu
             </span>
           </Link>

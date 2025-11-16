@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest',
   metadataBase: new URL('https://negulescu.ro'),
+  verification: {
+    google: '8c3ee44c402fa7b9',
+  },
   openGraph: {
     type: 'website',
     locale: 'ro_RO',

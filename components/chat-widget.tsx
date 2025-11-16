@@ -4,11 +4,30 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send } from 'lucide-react'
 
+// Fonction pour obtenir le salut selon l'heure
+function getGreeting() {
+  const hour = new Date().getHours()
+  
+  if (hour >= 5 && hour < 12) {
+    return 'Bună dimineața' // Bonjour (matin)
+  } else if (hour >= 12 && hour < 18) {
+    return 'Bună ziua' // Bonjour (après-midi)
+  } else {
+    return 'Bună seara' // Bonsoir
+  }
+}
+
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const [message, setMessage] = useState('')
   const [isVisible, setIsVisible] = useState(false)
   const [isDismissed, setIsDismissed] = useState(false)
+  const [greeting, setGreeting] = useState('')
+
+  // Définir le salut au chargement
+  useEffect(() => {
+    setGreeting(getGreeting())
+  }, [])
 
   useEffect(() => {
     // Vérifier si l'utilisateur a fermé le widget
@@ -113,7 +132,7 @@ export function ChatWidget() {
           <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
             <div className="flex justify-start mb-4">
               <div className="bg-white text-gray-800 rounded-2xl px-4 py-3 shadow-sm border border-gray-100 max-w-[85%]">
-                <p className="text-sm">👋 Bună ziua! Sunt asistentul virtual Negulescu. Cu ce vă pot ajuta astăzi?</p>
+                <p className="text-sm">👋 {greeting}! Sunt asistentul virtual Negulescu. Cu ce vă pot ajuta astăzi?</p>
               </div>
             </div>
           </div>

@@ -15,10 +15,10 @@ export function Footer() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] rounded-lg rotate-45"></div>
                 <div className="absolute inset-[3px] bg-[#0A0A0A] rounded-lg rotate-45"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-lg font-bold text-white z-10" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>N</span>
+                  <span className="text-lg font-bold text-white z-10 font-azonix">N</span>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-white tracking-tight" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 600, letterSpacing: '-0.01em' }}>
+              <h3 className="text-xl font-bold text-white tracking-tight font-azonix uppercase">
                 Negulescu
               </h3>
             </div>

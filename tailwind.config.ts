@@ -59,9 +59,10 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        heading: ['Azonix', 'Orbitron', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        body: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        azonix: ['Azonix', 'Orbitron', 'sans-serif'],
+        heading: ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        body: ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        azonix: ['Azonix', 'sans-serif'],
+        sans: ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],

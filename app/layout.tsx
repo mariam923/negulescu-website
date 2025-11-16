@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ChatWidget } from '@/components/chat-widget'
 
-const inter = Inter({ 
+const roboto = Roboto({ 
+  weight: ['300', '400', '500', '700', '900'],
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -51,7 +52,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ro">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Navbar />
         <main className="min-h-screen pt-20">
           {children}
